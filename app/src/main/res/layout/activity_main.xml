@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.scientific.calculator.scientificcalculator.MainActivity">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="21dp"
+        android:id="@+id/etNum"
+        android:hint="NUMBER 1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_marginTop="40dp"
+        android:id="@+id/etNum2"
+        android:layout_below="@+id/etNum"
+        android:layout_alignLeft="@+id/etNum"
+        android:layout_alignStart="@+id/etNum"
+        android:hint="NUMBER 2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_marginTop="35dp"
+        android:id="@+id/tvResult"
+        android:layout_below="@+id/etNum2"
+        android:layout_alignLeft="@+id/etNum2"
+        android:layout_alignStart="@+id/etNum2"
+        android:hint="RESULT" />
+
+    <Button
+        android:text="/"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnDiv"
+        android:layout_below="@+id/tvResult"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSub"
+        android:layout_below="@+id/btnMult"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="*"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMult"
+        android:layout_below="@+id/btnDiv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSub"
+        android:layout_alignLeft="@+id/btnSub"
+        android:layout_alignStart="@+id/btnSub"
+        android:id="@+id/btnAdd" />
+
+    <Button
+        android:text="Cos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCos"
+        android:layout_alignBaseline="@+id/btnSin"
+        android:layout_alignBottom="@+id/btnSin"
+        android:layout_toLeftOf="@+id/btnSin"
+        android:layout_toStartOf="@+id/btnSin" />
+
+    <Button
+        android:text="tan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTan"
+        android:layout_alignBaseline="@+id/btnCos"
+        android:layout_alignBottom="@+id/btnCos"
+        android:layout_toLeftOf="@+id/btnCos"
+        android:layout_toStartOf="@+id/btnCos" />
+
+    <Button
+        android:text="Sin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSin"
+        android:layout_alignBaseline="@+id/btnDiv"
+        android:layout_alignBottom="@+id/btnDiv"
+        android:layout_toLeftOf="@+id/btnDiv"
+        android:layout_toStartOf="@+id/btnDiv" />
+
+    <Button
+        android:text="M+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDiv"
+        android:layout_toRightOf="@+id/btnCos"
+        android:layout_toEndOf="@+id/btnCos"
+        android:id="@+id/btnms" />
+
+    <Button
+        android:text="MR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCos"
+        android:layout_toLeftOf="@+id/btnms"
+        android:layout_toStartOf="@+id/btnms"
+        android:id="@+id/btnmr" />
+
+    <Button
+        android:text="MC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTan"
+        android:layout_toLeftOf="@+id/btnmr"
+        android:layout_toStartOf="@+id/btnmr"
+        android:id="@+id/btnclr" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnMult"
+        android:layout_toLeftOf="@+id/btnSub"
+        android:layout_toStartOf="@+id/btnSub"
+        android:id="@+id/btnsqrt"
+        android:text="√" />
+
+    <TextView
+        android:text="M:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/viewm"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/viewm2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewm"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        android:layout_below="@+id/btnAdd"
+        android:layout_toRightOf="@+id/viewm2"
+        android:layout_toEndOf="@+id/viewm2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:text="C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnms"
+        android:layout_toRightOf="@+id/btnclr"
+        android:layout_toEndOf="@+id/btnclr"
+        android:id="@+id/btnc" />
+
+</RelativeLayout>
