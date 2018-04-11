@@ -74,13 +74,12 @@
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:text="+"
+        android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnSub"
-        android:layout_alignLeft="@+id/btnSub"
-        android:layout_alignStart="@+id/btnSub"
-        android:id="@+id/btnAdd" />
+        android:layout_alignTop="@+id/btnSub"
+        android:layout_toStartOf="@+id/btnCos"
+        android:text="+" />
 
     <Button
         android:text="Cos"
