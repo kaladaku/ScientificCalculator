@@ -77,8 +77,8 @@
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/btnSub"
-        android:layout_toStartOf="@+id/btnCos"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/btnSub"
         android:text="+" />
 
     <Button
